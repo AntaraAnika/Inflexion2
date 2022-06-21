@@ -260,6 +260,103 @@ video {
     background-color: #121212
 }
 
+/* Custom Css */
+
+/* Scroll Button */
+@-webkit-keyframes scrollDown {
+    0% {
+        top: 14px;
+        opacity: 0;
+    }
+
+    15% {
+        top: 14px;
+        opacity: 1;
+    }
+
+    30% {
+        top: 14px;
+        opacity: 1;
+    }
+
+    45% {
+        top: 34px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 34px;
+        opacity: 0;
+    }
+}
+
+@keyframes scrollDown {
+    0% {
+        top: 14px;
+        opacity: 0;
+    }
+
+    15% {
+        top: 14px;
+        opacity: 1;
+    }
+
+    30% {
+        top: 14px;
+        opacity: 1;
+    }
+
+    45% {
+        top: 34px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 34px;
+        opacity: 0;
+    }
+}
+
+.scroll__down {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll__mouse {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 54px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.scroll__wheel {
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-animation: scrollDown 2.5s infinite;
+    animation: scrollDown 2.5s infinite;
+}
+
+
+
+
+/* Custom Css end */
+
+@media screen and (max-width: 1650px) {
+    .scroll__down {
+        top: 90%;
+    }
+}
+
+
 @media only screen and (min-width:1200px) and (max-width:1399px) {
     .sticky {
         padding: 0 50px
@@ -917,6 +1014,11 @@ only screen and (min-width:768px) and (max-width:991px),
     .hero-content-img {
         max-width: 420px
     }
+
+    /* Scroll */
+    .scroll__down {
+        display: none;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -928,6 +1030,11 @@ only screen and (min-width:768px) and (max-width:991px),
 @media(max-width:767px) {
     .hero-content-img {
         display: none
+    }
+
+    /* Scroll */
+    .scroll__down {
+        display: none;
     }
 }
 
@@ -972,6 +1079,7 @@ only screen and (min-width:768px) and (max-width:991px),
 @media only screen and (min-width:1200px) and (max-width:1399px) {
     .hero-content {
         max-width: 500px;
+        min-height: 340px;
         padding: 30px 20px
     }
 }
