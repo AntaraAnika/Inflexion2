@@ -317,6 +317,18 @@ video {
     }
 }
 
+.hero-content a {
+    overflow: visible !important;
+}
+
+.hero-content a:hover:before {
+    height: 0 !important;
+}
+
+.nohover {
+    pointer-events: none !important;
+}
+
 .scroll__down {
     position: absolute;
     top: 84%;
@@ -344,7 +356,6 @@ video {
     -webkit-animation: scrollDown 2.5s infinite;
     animation: scrollDown 2.5s infinite;
 }
-
 
 
 
