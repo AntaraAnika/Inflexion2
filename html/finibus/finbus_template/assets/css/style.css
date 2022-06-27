@@ -347,14 +347,14 @@ video {
 
 .scroll__wheel {
     position: absolute;
-    top: 14px;
+    top: 33px;
     left: 13px;
     width: 4px;
     height: 4px;
     background-color: #fff;
     border-radius: 50%;
-    -webkit-animation: scrollDown 2.5s infinite;
-    animation: scrollDown 2.5s infinite;
+    -webkit-animation: up-down 2s alternate infinite;
+    animation: up-down 2s alternate infinite;
 }
 
 
